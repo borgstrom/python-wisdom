@@ -18,8 +18,9 @@ Consider the following:
     log.info("About to make 10,000 requests")
     for x in xrange(10000):
         response = make_request()
-	log.debug("Response: {0}".format(response))
-	...
+        log.debug("Response: {0}".format(response))
+
+        # code continues...
 
 Even if we're only at the `INFO` level we still pay to format the whole response into a string on every iteration just
 to have it thrown away by the logger.
@@ -29,9 +30,11 @@ Instead, use the built-in interpolation:
     log.info("About to make 10,000 requests")
     for x in xrange(10000):
         response = make_request()
-	log.debug("Response: %s", response)
-	...
+        log.debug("Response: %s", response)
 
+        # code continues...
+
+Since the arguments are passed as references in Python you only pay for the interpolation if you're at that log level.
 
 ### Logging exceptions
 
