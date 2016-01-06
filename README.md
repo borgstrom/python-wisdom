@@ -1,7 +1,7 @@
 Python Wisdom
 =============
 
-This file contains learnings in Python that I felt needed to be documented because I see them, and I consistently
+This file contains lessons in Python that I felt needed to be documented because I see them, and I consistently
 comment on them during code reviews.
 
 Logging
