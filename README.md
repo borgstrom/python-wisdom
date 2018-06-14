@@ -4,6 +4,14 @@ Python Wisdom
 This file contains lessons in Python that I felt needed to be documented because I see them, and I consistently
 comment on them during code reviews.
 
+Testing
+-------
+
+Use pytest & native Python `assert` statements.  It makes debugging test failures so much eaiser.
+
+See: https://gist.github.com/borgstrom/bbe8237c2f821f8e63a40ad151ebc66d
+
+
 Logging
 -------
 
